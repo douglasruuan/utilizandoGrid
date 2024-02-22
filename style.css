@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*como todo projeto tem a mesma font colocamos no root.*/
+:root {
+  font-family: Mulish;
+}
+
+
+body {
+  background: #121214;
+  padding: 72px 104px;
+  display: grid; /*apenas no cabecalho para centralizar junto aos outros elementos*/
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 73px;
+  color: #02799D;
+}
+header p {
+  font-size: 32px;
+  font-weight: 600;
+  color: #c4c4cc;
+}
+
+/*
+    display: grid sempre NO PAI do bloco.
+    template colums repeat (primeiro argumento e quantidade de colunas e depois a divisão
+    no gap sempre vem primeiro 48px vertical e 60px horizontal
+    place content para centralizar/espaçamentos entre as caixas.
+    
+*/
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 366px);
+  place-content: center;
+  margin-top: 62px;
+  gap: 48px 60px;
+}
+
+
+
+.card {
+  background: #323238;
+  border: 2px solid 323238;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card h2 {
+  color: #e1e1e6;
+  font-size: 35px;
+  font-weight: 900;
+  padding: 24px 32px 0;
+}
+
+.card p {
+  color: #c4c4cc;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 24px 32px 32px;
+}
